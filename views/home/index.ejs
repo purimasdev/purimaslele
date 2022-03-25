@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head.ejs') %>
+  </head>
+
+  <body class="has-background-grey-light">
+    <!-- Bigger Screen View -->
+    <%- include('../partials/tablet-up.ejs') %>
+    <!-- END Bigger Screen View -->
+
+    <!-- Mobile View -->
+
+    <!-- Nav -->
+    <%- include('../partials/nav.ejs') %>
+    <!-- END Nav -->
+
+    <!-- Main Content -->
+    <section>
+      <div class="is-hidden-tablet">
+        <div class="hero is-fullheight has-text-centered">
+          <div class="hero-body p-2">
+            <div class="container">
+              <!-- Brand -->
+              <div class="box p-2 mb-2 has-background-grey-lighter">
+                <div class="columns is-mobile is-vcentered">
+                  <div class="column is-narrow">
+                    <figure class="image is-96x96">
+                      <img
+                        width="96"
+                        height="96"
+                        alt="logo"
+                        src="<%= pml.icon['96'] %>"
+                      />
+                    </figure>
+                  </div>
+                  <div class="column has-text-left">
+                    <p class="title is-4"><%= pml.judul %></p>
+                    <p class="subtitle is-5"><%= pml.versi %></p>
+                  </div>
+                </div>
+              </div>
+              <!-- END Brand -->
+              <!-- Menu Akses -->
+              <div class="box has-background-grey-lighter">
+                <p class="title is-5">Menu Akses</p>
+                <div class="columns is-vcentered">
+                  <% for( let i = 0; i < 3; i++ ) { %>
+                  <div class="column">
+                    <a href="#" class="box">
+                      <p class="subtitle is-4">
+                        <span class="material-icons-round">adb</span>
+                      </p>
+                      <p class="title is-5">subJudul <%= i %></p>
+                    </a>
+                  </div>
+                  <% } %>
+                </div>
+              </div>
+              <!-- END Menu Akses -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Main Content -->
+
+    <!-- END Mobile View -->
+  </body>
+</html>
