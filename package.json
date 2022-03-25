@@ -1,0 +1,23 @@
+{
+  "name": "purimaslele",
+  "version": "1.0.0",
+  "description": "purimaslele app by purimasdev",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purimasdev/purimaslele.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/purimasdev/purimaslele/issues"
+  },
+  "homepage": "https://github.com/purimasdev/purimaslele#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
