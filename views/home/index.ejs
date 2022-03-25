@@ -4,21 +4,18 @@
     <%- include('../partials/head.ejs') %>
   </head>
 
-  <body class="has-background-grey-light">
+  <body>
     <!-- Bigger Screen View -->
     <%- include('../partials/tablet-up.ejs') %>
     <!-- END Bigger Screen View -->
 
     <!-- Mobile View -->
-
-    <!-- Nav -->
-    <%- include('../partials/nav.ejs') %>
-    <!-- END Nav -->
-
-    <!-- Main Content -->
     <section>
       <div class="is-hidden-tablet">
-        <div class="hero is-fullheight has-text-centered">
+        <!-- Nav -->
+        <%- include('../partials/nav.ejs') %>
+        <!-- END Nav -->
+        <div class="hero has-background-grey-light is-fullheight has-text-centered">
           <div class="hero-body p-2">
             <div class="container">
               <!-- Brand -->
@@ -63,8 +60,6 @@
         </div>
       </div>
     </section>
-    <!-- END Main Content -->
-
     <!-- END Mobile View -->
   </body>
 </html>
