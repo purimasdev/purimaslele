@@ -4,7 +4,7 @@ const path = require('path')
 var compression = require('compression')
 
 // IMPORT FILE
-const authRoutes = require('./routes/auth')
+const authRoutes = require('./routes/authRoutes')
 
 // ASSIGN CONST
 const app = express()
@@ -13,7 +13,7 @@ const port = 3000
 // GLOBAL VARIABLE
 app.locals.pml = {
   judul: 'Puri Mas Lele',
-  versi: '0.2.3',
+  versi: '0.2.4',
   icon: {
     '96': '/icons/icon-96x96.png',
     '192': '/icons/icon-192x192.png'
