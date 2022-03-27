@@ -41,4 +41,4 @@ app.get('*', (req, res) => {
 })
 
 // EXPRESS SERVER
-app.listen(port, () => console.log(`Server run on port : ${port}`))
+app.listen(port, () => console.log(`Server run on port : ${port}, or try port 4000`))
