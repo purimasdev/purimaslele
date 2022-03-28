@@ -14,9 +14,15 @@
       <!-- END Icon + Brand -->
       <!-- Auth Button -->
       <div class="navbar-item is-expanded is-block has-text-right">
+        <% if (user) { %>
+        <a href="/auth/logout" class="button p-1 is-danger">
+          <i class="material-icons-round"> logout </i>
+        </a>
+        <% } else { %>
         <a href="/auth" class="button p-1 is-primary">
           <i class="material-icons-round"> login </i>
         </a>
+        <% } %>
       </div>
       <!-- Auth Button -->
     </div>

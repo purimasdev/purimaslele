@@ -5,9 +5,16 @@
         <img width="96" height="96" alt="logo" src="<%= pml.icon['192'] %>" />
       </a>
     </div>
+    <% if (typeof navTitle !== 'undefined') { %>
+    <div class="column has-text-left">
+      <p class="title is-3 mb-0"><%= navTitle.a %></p>
+      <p class="title is-3"><%= navTitle.b %></p>
+    </div>
+    <% } else { %>
     <div class="column has-text-left">
       <p class="title is-4"><%= pml.judul %></p>
       <p class="subtitle is-5"><%= pml.versi %></p>
     </div>
+    <% } %>
   </div>
 </div>

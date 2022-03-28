@@ -201,16 +201,12 @@
           body: JSON.stringify(formData),
         }).then((res) => res.json());
 
-        // console.log(JSON.stringify(formData))
-
         if (result.status === "ok") {
-          console.log(result)
           alert(result.message);
-          // location.assign("/admin");
-          // window.location.replace('/login')
+          location.assign("/admin");
         } else {
           // errorText.textContent = result.message;
-          alert(result.message)
+          alert(result.message);
         }
       }
     </script>
