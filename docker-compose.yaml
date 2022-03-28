@@ -4,7 +4,7 @@ services:
     image: mongo:5.0.6
     container_name: purimaslele_db
     restart: unless-stopped
-    env_file: ./config/.env.docker
+    env_file: ./config/.env
     environment:
       - MONGO_INITDB_ROOT_USERNAME=$MONGODB_USER
       - MONGO_INITDB_ROOT_PASSWORD=$MONGODB_PASSWORD
@@ -17,7 +17,7 @@ services:
       - mongodb
     build: .
     restart: unless-stopped
-    env_file: ./config/.env.node
+    env_file: ./config/.env
     container_name: purimaslele_app
     ports:
       - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
@@ -29,9 +29,9 @@ services:
       - DB_PORT=$MONGODB_DOCKER_PORT
     volumes:
       - .:/app
-      - pml_data:/app/node_modules
+      - data:/app/node_modules
     stdin_open: true
     tty: true
 volumes:
   db:
-  pml_data:
+  data:
